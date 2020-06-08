@@ -19,11 +19,11 @@ double zufall(int a, int c, int m) {
 
   void extra(int a, int c, int m, int n) {
 
-    double Kreis;
+    double Kreis=0;
     double p = M_PI / 4;
     double Ewert = p * n;
     double varianz = p * (1 - p) * n;
-    double pi = 4 * (Kreis / n);
+    
     double sigma = 4 * sqrt(varianz)/n;
     
   
@@ -33,6 +33,8 @@ double zufall(int a, int c, int m) {
     }
    }
   
+  double pi = 4 * (Kreis / n);
+
    fout << n << " " << Ewert << " " << varianz << " " << "|" << " " << Kreis << " " << pi << " " << sigma << endl;
 
    return;
@@ -50,9 +52,3 @@ double zufall(int a, int c, int m) {
   }
 
   
-
-    
-
-    
-
-
